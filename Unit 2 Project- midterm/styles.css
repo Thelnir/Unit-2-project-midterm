@@ -1,0 +1,488 @@
+/*
+Student Name: Joshua Whitmore
+File Name:CIS 195 Unit Project 2 styles.css
+Date: 10/6/2024
+*/
+/* CSS Reset*/
+*
+{
+    margin: 0px;
+    
+    padding: 0px;
+    
+    border: 0px;
+}
+
+/*Style rules for body and images*/
+body
+{
+    background-color: #f6eee4;
+}
+img
+{
+    max-width: 100%;
+    
+    display: block;
+}
+
+/*Style rules for mobile viewport*/
+
+
+
+/*Style rules to show mobile class and hide tab-desk class*/
+.mobile 
+{
+    display: block;
+}
+.tab-desk
+{
+    display: none;
+}
+
+
+/*Style rules for header area*/
+.mobile h1
+{
+    padding: 2%;
+    text-align: center;
+    .emblema-one-regular {
+        font-family: "Emblema One", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      }      
+}
+.mobile h3
+{
+    padding: 2%;
+    text-align: center; 
+    .lora {
+        font-family: "Lora", serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+}
+
+
+/*Style rules for navigation area*/
+nav
+{
+    background-color: #0047AB;
+
+}
+nav ul
+{
+    list-style: none;
+    
+    margin: 0px;
+    
+    text-align: center;
+}
+nav li
+{
+    display: block;
+    
+    font-size: 1.5em;
+    
+    font-family: Geneva, Arial, sans-serif;
+    
+    font-weight: bold;
+    border-top: 0.5px #f6eee4;
+}
+nav li a
+{
+    display: block;
+    
+    color: #f6eee4;
+    
+    padding-top: 0.5em;
+    
+    padding-bottom: 0.5em;
+    
+    padding-left: 2em;
+    
+    padding-right: 2em;
+    
+    text-decoration: none;
+}
+
+/*Style rules for main content (alt)*/
+main
+{
+    padding: 2%;
+    .lora {
+        font-family: "Lora", serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+
+}
+main p
+{
+    font-size: 1.25em;
+}
+main h3
+{
+    padding-top: 2%;
+}
+main ul
+{
+    list-style: square;
+}
+.link
+{
+    color: #4d3319;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+.action
+{
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+.round
+{
+    border-radius: 6px;
+}
+aside
+{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px #c5a687;
+}
+figure
+{
+    border: 4px solid #0047AB;
+    box-shadow: 6px 6px 10px #c5a687;
+    max-width: 400px;
+    margin: 2% auto;
+}
+figcaption
+{
+    padding: 2%;
+    border-top: 4px solid #0047AB;
+}
+#info
+{
+    margin-left: 6px;
+}
+#contact
+{
+    text-align: center;
+}
+.tel-link
+{
+    background-color: #0047AB;
+    padding: 2%;
+    width: 80%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tel-link a
+{
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Style rules for main content*/
+
+main
+{
+    padding: 2%;
+    
+    font-family: Verdana,Arial,sans-serif;
+}
+main p
+{
+    font-size: 1.25em;
+}
+main h3
+{
+    padding-top: 2%;
+}
+main ul
+{
+    list-style-type: square;
+}
+.link
+{
+    color: #4d3319;
+    
+    text-decoration: none;
+    
+    font-weight: bold;
+    
+    font-style: italic;
+}
+.action
+{
+    font-size: 1.75em;
+    
+    font-weight: bold;
+    
+    text-align: center;
+}
+#contact
+{
+    text-align: center;
+}
+
+/*Style rules for footer content*/
+footer
+{
+    text-align: center;
+
+    font-size: 0.85em;
+    
+    background-color: #0047AB;
+    
+    color: #f6eee4;
+    
+    padding-top: 1%;
+    
+    padding-bottom: 1%;
+    
+    padding-left: 0%;
+    
+    padding-right: 0%;
+}
+footer a 
+{
+    color: #f3e6d8;
+
+    text-decoration: none;
+}
+
+/*unorganized style rules*/
+
+ul
+{
+    margin: default;
+}
+
+/*Media query for tablet viewport*/
+
+@media screen and (min-width: 620px) {
+
+    /*Tablet viewport: Show tab-desk class, hide mobile class*/
+
+    .mobile 
+    {
+        display: none;
+    }
+    .tab-desk
+    {
+        display: block;
+    }
+
+    /*Tablet viewport: Style rules for nav area*/
+
+    nav li
+    {
+        border-top: 0px;
+        display: inline-block;
+        font-size: 1.25em;
+    }
+    nav li a
+    {
+        padding: 0.5em;
+    }
+    .grid
+    {
+        display: grid;
+        grid-template-columns: 49vw 49vw;
+        grid-column-gap: 10px;
+    }
+    aside 
+    {
+        grid-column: 1 / span 2;
+    }
+}
+
+/*Media query for large desktop viewports*/
+@media screen and (min-width: 1921px) {
+    body 
+    {
+        background-image: linear-gradient(#f6eee4,#78593a);
+    }
+    #wrapper
+    {
+        width: 1920px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main 
+    {
+        background-color: #f6eee4;
+    }
+    .grid 
+    {
+        grid-template-columns: 24vw 24vw 24vw 24vw;
+    }
+    aside 
+    {
+        grid-column: 1 / span 4;
+        font-size: 3em;
+    }
+
+}
+
+/*Media query for print*/
+@media print { 
+    body 
+    {
+        background-color: white;
+        color: black;
+    }   
+}
+
+/*Media query for desktop viewport*/
+
+@media screen and (min-width: 1000px) {
+    /*Desktop viewport: style rules for nav area*/
+    nav li 
+    {
+        font-size: 1.5em;
+    }
+    nav li a 
+    {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+    nav li a:hover
+    {
+        color: #0047AB;
+        background-color: #f6eee4;
+        opacity: 0.5;
+    }
+
+    /*Desktop viewport: style rules for main content*/
+    #info ul 
+    {
+        margin-left: 5%;
+    }
+    .grid 
+    {
+        grid-template-columns: 32vw 32vw 32vw;
+        grid-gap: 30px;
+    }
+    aside 
+    {
+        grid-column: 1 / span 3;
+        font-size: 2em;
+    }
+}
+main
+{
+    background-image: radial-gradient(#0047AB, #DC143C );
+    color: #d3d6c8;
+}
+header
+{
+    background-color: #DC143C;
+}
+/*Instructions
+Unit 2 Project
+
+For this project, you will be graded based on the competencies AND requirements listed in these instructions. Your final competency score will be multiplied by the percentage of requirements that you meet.
+
+Each competency will be graded on the following scale:
+	- 0 (Competency not present/Not Demonstrated)
+	- 1 (Competency present, demonstrated correct approach but does not work)
+	- 2 (Competency present, works with some issues)
+	- 3 (Competency present, works without issues)
+
+======================
+=====REQUIREMENTS=====
+======================
+
+For this project, you will build a website about Future Technologies. It is a website that showcases advancements in technology. The website should consist of at least four pages including the home page. Here are a list of suggestions about advancements in technologies:
+-	Artificial Intelligence
+-	Robotics
+-	Internet of Things (IoT).
+-	3D Printing
+-	Self-Driving cars
+-	Virtual Reality
+-	Nano Tech
+-	Brain chips
+-	Anything else that you choose
+
+
+For this project you will complete the following:
+	1. A wireframe of the page template for the mobile version of the site.
+		- Design a mobile-friendly navigation system		
+		- The layout for mobile pages should follow the practices we learned in Ch5-7
+
+	2. A wireframe of the page template for the desktop version of the site.
+		- Rearrange the content from your mobile layout to fit desktop design practices from Ch5-7.
+		- Be sure that this layout is distinct from your mobile layout. 
+
+	3. A template HTML page, including an external CSS stylesheet to format the content according to the following requirements:
+		- Add at least one media query to setup the desktop styles.
+		- Use two custom Google Fonts.
+		- Use at least one structural pseudo-class.
+			-i.e. The type of pseudo-classes that select the nth type of element
+		- Use at least one dynamic pseudo-class in your desktop and media query.
+			-i.e. The type of pseudo-classes that select links when the user has them hovered, clicked, etc.
+		- Use a gradient for the background.
+		- Create and add a favicon to all HTML pages within the website.
+		- Use the opacity property or rgba() function in your stylesheet.
+		- Use at least one text shadow and one box shadow within the website. 
+  
+	4. A home page, and at least 3 other pages showcasing advanced technology.
+		- Use a multiple-column layout on at least one page.
+		- Add images to each page that are related to the new technologies of that page.
+		- Integrate at least two figure elements and at least two figcaption elements
+			-(Hint: It may be a good idea to put your images into these figures)
+		- Use at least one article, section, or aside element.
+		- Integrate and use the CSS grid layout within your website and include style rule that spans an element across at least two grid columns  
+		-(These requirements need to be met once, on at least one page. They do not have to be on every page.)
+
+	5. Validate the HTML and CSS used for your project with the W3C validators.
+
+When finished, use the same steps from the introduction assignment to upload your files to a GitHub repository. Ensure that GitHub Pages is enabled and test each page on your site through GitHub Pages. Once complete, submit a link to your site to this assignment, so that it takes me to the homepage of your GitHub Pages site. Be sure that your wireframe is also included within the repository. I will be able to view it from there, but it does not have to be on your site unless you want it to.
+
+An example of a completed project can be located here: 
+Webpage: https://hudasj.github.io/Unit2-Project/index.html
+Repository: https://github.com/hudasj/Unit2-Project
+
+======================
+=====COMPETENCIES=====
+======================
+
+Technical Skills
+	-The site and pages run without errors, and matches the CSS style rules requirements.
+		__/3
+
+Critical Thinking
+	-Navigating and viewing the site is clear and simple for the end user, and both the mobile and desktop versions utilize best practices for design as covered in Ch 5-7. 
+		__/3
+	-The page template simplifies the process of adding new pages with consistent styling to the site
+		__/3
+
+Professionalism
+	-The folder structure and filenames are appropriately named to convey their meaning
+		__/3
+	-The Wireframe(s) make the visual layout and folder structure of the site clear
+		__/3
+	-The code for each file is correctly indented and spaced to show each 
+		__/3
+
+
+Competencies Total : __/18
+
+Percentage of requirements met: __/100%
+
+Total score: (__*__%)/18
+*/
